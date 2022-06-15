@@ -4,7 +4,7 @@ import com.example.sylphie.command.defaults.CommandExecutor;
 import com.example.sylphie.command.defaults.CommandInfo;
 import com.example.sylphie.command.defaults.CommandSender;
 import com.example.sylphie.component.DiscordMessage;
-import com.example.sylphie.component.SylphieBotStateManager;
+import com.example.sylphie.model.SylphieBotStateManager;
 import com.example.sylphie.util.ItemParseUtil;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -40,8 +40,8 @@ public class UnwatchCommand implements CommandExecutor {
             return;
         }
         stateManager.removeFromWatchList(itemId);
-        LOGGER.info(String.format("Removed item %d from the watch list", itemId));
-        commandSender.sendMessage(String.format("Removed %d from the watch list", itemId));
+        LOGGER.info(String.format("Removed item with id %d from the watch list", itemId));
+        commandSender.sendMessage(String.format("Removed item with id %d from the watch list", itemId));
         if (stateManager.isWatchListEmpty()) {
             stateManager.stopWatching();
         }

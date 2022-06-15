@@ -1,7 +1,7 @@
 package com.example.sylphie.util;
 
-import com.example.sylphie.component.DiscordBotState;
-import com.example.sylphie.component.VendingItem;
+import com.example.sylphie.model.DiscordBotState;
+import com.example.sylphie.model.VendingItem;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 

@@ -1,6 +1,6 @@
 package com.example.sylphie.parser.result;
 
-import com.example.sylphie.component.VendingItem;
+import com.example.sylphie.model.VendingItem;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;

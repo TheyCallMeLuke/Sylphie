@@ -1,7 +1,7 @@
 package com.example.sylphie.parser.impl;
 
-import com.example.sylphie.component.Item;
-import com.example.sylphie.component.VendingItem;
+import com.example.sylphie.model.Item;
+import com.example.sylphie.model.VendingItem;
 import com.example.sylphie.parser.VendingShopParser;
 import com.example.sylphie.parser.result.VendorShopParsingResult;
 import org.jsoup.nodes.Document;
@@ -9,7 +9,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 

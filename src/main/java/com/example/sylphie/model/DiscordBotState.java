@@ -1,4 +1,4 @@
-package com.example.sylphie.component;
+package com.example.sylphie.model;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;

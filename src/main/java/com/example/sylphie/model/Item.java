@@ -1,4 +1,4 @@
-package com.example.sylphie.component;
+package com.example.sylphie.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

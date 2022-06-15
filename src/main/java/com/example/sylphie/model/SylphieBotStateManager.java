@@ -1,6 +1,5 @@
-package com.example.sylphie.component;
+package com.example.sylphie.model;
 
-import com.example.sylphie.command.watch.WatchCommand;
 import com.example.sylphie.util.SylphieMessageFormatter;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import org.springframework.stereotype.Component;
@@ -8,7 +7,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Logger;
 
 @Component
 public class SylphieBotStateManager {

@@ -3,8 +3,8 @@ package com.example.sylphie.command.watch;
 import com.example.sylphie.command.defaults.CommandExecutor;
 import com.example.sylphie.command.defaults.CommandInfo;
 import com.example.sylphie.command.defaults.CommandSender;
-import com.example.sylphie.component.SylphieBotStateManager;
-import com.example.sylphie.component.VendingItem;
+import com.example.sylphie.model.SylphieBotStateManager;
+import com.example.sylphie.model.VendingItem;
 import com.example.sylphie.network.DocumentFetcher;
 import com.example.sylphie.parser.VendingShopParser;
 import com.example.sylphie.parser.VendorListParser;
@@ -60,8 +60,12 @@ public class WatchCommand implements CommandExecutor {
             return;
         }
         stateManager.addToWatchList(itemId, maxPrice);
-        LOGGER.info(String.format("Added item %d with max price %d to the watch list", itemId, maxPrice));
-        commandSender.sendMessage(String.format("Added item %d to the watch list", itemId));
+        LOGGER.info(String.format("Added item with id %d with max price %d to the watch list", itemId, maxPrice));
+        commandSender.sendMessage(String.format(
+                "Added item with id %d with max price %d to the watch list",
+                itemId,
+                maxPrice
+        ));
 
         if (stateManager.isNotRunning()) {
             stateManager.start();
