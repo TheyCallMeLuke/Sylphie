@@ -1,0 +1,43 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.0'
+
+    // jsoup
+    implementation 'org.jsoup:jsoup:1.15.1'
+
+    // java discord api
+    implementation "net.dv8tion:JDA:5.0.0-alpha.12"
+
+    // configuration annotation processor
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.7.0'
+
+    // assertj
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
