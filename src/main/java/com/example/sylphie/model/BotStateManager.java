@@ -9,11 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 
 @Component
-public class SylphieBotStateManager {
+public class BotStateManager {
 
     private final DiscordBotState botState;
 
-    public SylphieBotStateManager(DiscordBotState botState) {this.botState = botState;}
+    public BotStateManager(DiscordBotState botState) {this.botState = botState;}
 
     public void start() {
         botState.setRunning(true);
@@ -79,6 +79,10 @@ public class SylphieBotStateManager {
         botState.setRunning(false);
         botState.setItemIdToMaxPrice(new HashMap<>());
         botState.setGoodVendingItems(new ArrayList<>());
+        botState.setCurrentPage(0);
+    }
+
+    public void resetPage() {
         botState.setCurrentPage(0);
     }
 }

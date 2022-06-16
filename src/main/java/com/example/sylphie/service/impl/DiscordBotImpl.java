@@ -75,7 +75,7 @@ public class DiscordBotImpl implements DiscordBot {
         Command command = discordMessage.getCommand();
         String messageContent = discordMessage.getEvent().getMessage().getContentRaw();
 
-        List<String> args = Arrays.stream(messageContent.split(" "))
+        List<String> args = Arrays.stream(messageContent.trim().replaceAll(" +", " ").split(" "))
                 .skip(1)
                 .collect(Collectors.toList());
 

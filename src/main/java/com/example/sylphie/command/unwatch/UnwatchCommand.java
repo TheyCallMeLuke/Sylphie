@@ -4,7 +4,7 @@ import com.example.sylphie.command.defaults.CommandExecutor;
 import com.example.sylphie.command.defaults.CommandInfo;
 import com.example.sylphie.command.defaults.CommandSender;
 import com.example.sylphie.component.DiscordMessage;
-import com.example.sylphie.model.SylphieBotStateManager;
+import com.example.sylphie.model.BotStateManager;
 import com.example.sylphie.util.ItemParseUtil;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -18,9 +18,9 @@ public class UnwatchCommand implements CommandExecutor {
 
     public static Logger LOGGER = Logger.getLogger(UnwatchCommand.class.getName());
 
-    private final SylphieBotStateManager stateManager;
+    private final BotStateManager stateManager;
 
-    public UnwatchCommand(SylphieBotStateManager botStateManager) {
+    public UnwatchCommand(BotStateManager botStateManager) {
         this.stateManager = botStateManager;
     }
 

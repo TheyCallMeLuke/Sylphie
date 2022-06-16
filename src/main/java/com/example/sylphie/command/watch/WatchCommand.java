@@ -3,7 +3,7 @@ package com.example.sylphie.command.watch;
 import com.example.sylphie.command.defaults.CommandExecutor;
 import com.example.sylphie.command.defaults.CommandInfo;
 import com.example.sylphie.command.defaults.CommandSender;
-import com.example.sylphie.model.SylphieBotStateManager;
+import com.example.sylphie.model.BotStateManager;
 import com.example.sylphie.model.VendingItem;
 import com.example.sylphie.network.DocumentFetcher;
 import com.example.sylphie.parser.VendingShopParser;
@@ -30,13 +30,13 @@ public class WatchCommand implements CommandExecutor {
 
     public static Logger LOGGER = Logger.getLogger(WatchCommand.class.getName());
 
-    private final SylphieBotStateManager stateManager;
+    private final BotStateManager stateManager;
     private final DocumentFetcher documentFetcher;
     private final VendingShopParser vendingShopParser;
     private final VendorListParser vendorListParser;
 
     public WatchCommand(
-            SylphieBotStateManager botStateManager,
+            BotStateManager botStateManager,
             DocumentFetcher documentFetcher, VendingShopParser vendingShopParser,
             VendorListParser vendorListParser
     ) {
@@ -90,6 +90,7 @@ public class WatchCommand implements CommandExecutor {
     }
 
     private void scan(CommandSender commandSender) {
+        stateManager.resetPage();
         List<VendingItem> goodVendingItems = new ArrayList<>();
         while (true) {
             stateManager.nextPage();
