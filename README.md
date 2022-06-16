@@ -9,6 +9,12 @@ in this game is to make money. One way to make money is to sell your stuff to ot
 and sell high. But there's one problem: what if an another player buys that cheap item before me? Well, that's where Sylphie bot comes in. I tell her to watch
 for an item and notify me when someone sells that item for a good price. This happens in real-time so I'm usually the fastest to buy that cheap item.
 
+## Tech stack
+
+- Java, Spring Boot
+- JDA
+- Jsoup
+- 
 ## Features
 
 - Add items to the watch list
@@ -25,9 +31,3 @@ for an item and notify me when someone sells that item for a good price. This ha
 
 ### Get the current status of the bot
 ![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/status.png)
-
-## Tech stack
-
-- Java, Spring Boot
-- JDA
-- Jsoup
