@@ -15,8 +15,13 @@ for an item and notify me when someone sells that item for a good price. This ha
 - Remove items from the watch list
 - Check the current status
 
-## Example
+## Examples
 
+### Add an item to the watch list
 ![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/watch.png)
 
+### Remove an item from the watch list
+![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/unwatch.png)
 
+### Get the current status of the bot
+![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/status.png)
