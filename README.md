@@ -17,4 +17,6 @@ for an item and notify me when someone sells that item for a good price. This ha
 
 ## Example
 
-![Loading Example...](https://i.imgur.com/kVtTKvS.gif)
+![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/watch.png)
+
+
