@@ -25,3 +25,9 @@ for an item and notify me when someone sells that item for a good price. This ha
 
 ### Get the current status of the bot
 ![This is an image](https://github.com/TheyCallMeLuke/Sylphie/blob/master/images/status.png)
+
+## Tech stack
+
+- Java, Spring Boot
+- JDA
+- Jsoup
