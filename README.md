@@ -14,7 +14,7 @@ for an item and notify me when someone sells that item for a good price. This ha
 - Java, Spring Boot
 - JDA
 - Jsoup
-- 
+
 ## Features
 
 - Add items to the watch list
